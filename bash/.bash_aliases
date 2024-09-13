@@ -4,7 +4,7 @@
 # ln -s .bash_aliases ~/.bash_aliases
 
 function _clion() {
-    alias clion=$HOME/opt/clion*/bin/clion.sh
+    alias clion=$HOME/opt/clion*/bin/clion
 }
 
 function _pycharm() {
