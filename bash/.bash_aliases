@@ -8,7 +8,11 @@ function _clion() {
 }
 
 function _pycharm() {
-    alias pycharm=$HOME/opt/pycharm*/bin/pycharm.sh
+    alias pycharm=$HOME/opt/pycharm*/bin/pycharm
+}
+
+function _rye() {
+    source "$HOME/.rye/env"
 }
 
 function _set_basic_env() {
@@ -51,8 +55,13 @@ function _timer() {
     alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 }
 
+function ind() {
+    docker exec -it $1 /bin/bash
+}
+
 _clion
 _pycharm
+_rye
 _set_basic_env
 _fast_cd
 _useful_alias
